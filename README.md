@@ -1,12 +1,17 @@
-# Converting Mercator projection to equirectangular
+# Converting between mercator and equirectangular projections
 
 This is not a scientific tool.
 
 It is a simplified version of the tool described by: http://paulbourke.net/panorama/webmerc2sphere/index.html
 
 ```
-usage: mercator_to_equirectangular.py input_image output_image
+usage: main.py [--invert] input_image output_image
 ```
+
+Default is to convert from mercator to equirectangular.
+
+The option `--invert` does equirectangular to mercator.
+
 
 Source for input.png is [Wikipedia](https://en.wikipedia.org/wiki/Mercator_projection#/media/File:Mercator_with_Tissot's_Indicatrices_of_Distortion.svg) (unmodified, Author: Justin Kunimune, License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)).
 
